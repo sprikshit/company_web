@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>Blockverse Infotech Solutions </title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="IT Company Web development App Development, Graphic Designing" name="keywords">
-        <meta content="IT Company Website Template" name="description">
+        <meta content="IT Company, Web development App Development, Graphic Designing" name="keywords">
+        <meta content="blockverse is it leading company" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link href="favicon.png" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
@@ -37,8 +37,8 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav ml-auto">
-                            <a href="index.html" class="nav-item nav-link active mr-5">Home</a>
-                            <a href="about.html" class="nav-item nav-link mr-5">About</a>
+                            <a href="index.html" class="nav-item nav-link  mr-5">Home</a>
+                            <a href="about.html" class="nav-item nav-link  mr-5">About</a>
                             <a href="service.html" class="nav-item nav-link mr-5">Service</a>
                             
                             <a href="contact.html" class="nav-item nav-link mr-5">Contact</a>
@@ -66,7 +66,7 @@
                                 <div class="carousel-content">
                                     <h2>Welcome to Blockverse Infotech Solutions</h2>
                                     <p>Your trusted partner for innovative IT solutions.</p>
-                                    <a class="btn" href="/about">Read More</a>
+                                    <a class="btn" href="/">Read More</a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -82,7 +82,7 @@
                                 <div class="carousel-content">
                                     <h2>Your One stop Digital Solutions</h2>
                                     <p>Empowering Your Digital Success, One Solution at a Time.</p>
-                                    <a class="btn" href="/cybersecurity">Read More</a>
+                                    <a class="btn" href="/">Read More</a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -98,7 +98,7 @@
                                 <div class="carousel-content">
                                     <h2>Your Business, Our Commitment</h2>
                                     <p>Your Success, Our Promise: Committed to Your Business Growth.</p>
-                                    <a class="btn" href="/data-analytics">Read More</a>
+                                    <a class="btn" href="/d">Read More</a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -156,7 +156,7 @@
                             <p>
                                 "Our journey started with a bold vision to make a lasting impact on the tech industry. Since day one, we've been dedicated to surpassing expectations, breaking new ground, and fostering continuous innovation. With a commitment to excellence, we've embarked on a path of growth and transformation."
                             </p>
-                            <a class="btn" href="/our-story">Read More</a>
+                            <a class="btn" href="/about.html">Read More</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -168,7 +168,7 @@
                             <p>
                                 "Our mission is clear: to empower businesses with state-of-the-art technology and strategic expertise. We aspire to be the catalyst for your success, offering solutions that fuel growth and foster innovation. With a dedication to excellence, we're committed to achieving this vision."
                             </p>
-                            <a class="btn" href="/our-goal">Read More</a>
+                            <a class="btn" href="/about.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -562,24 +562,26 @@
         
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form">
-                            <form class="contactForm">
+                        <div class="form" >
+                            <form class="contactForm" name="sentMessage" id="contactForm" novalidate="novalidate" action="contact.php" method="post">
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
-                                        <input type="text" class="form-control" placeholder="Your Name" />
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name"/>
                                     </div>
                                     <div class="form-group col-sm-6">
-                                        <input type="email" class="form-control" placeholder="Your Email" />
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your Email"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject" />
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Number" required="required" data-validation-required-message="Please enter your Number"/>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                    <textarea class="form-control" rows="5" id="message" name="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter your Message"></textarea>
                                 </div>
-                                <div><button class="btn" type="submit">Send Message</button></div>
+                                <div><button class="btn" type="submit" id="sendMessageButton">Send Message</button></div>
                             </form>
+                            
+                            
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -629,10 +631,9 @@
                             </p>
         
                             <div class="social-links">
-                                <a href="#"><i class="ion-logo-twitter"></i></a>
-                                <a href="#"><i class="ion-logo-facebook"></i></a>
-                                <a href="#"><i class="ion-logo-linkedin"></i></a>
-                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                                <a href="#https://www.facebook.com/p/Blockverse-Infotech-Solutions-100087563513249/"><i class="ion-logo-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/blockverse-infotech-solutions/mycompany/verifi"><i class="ion-logo-linkedin"></i></a>
+                                <a href="https://www.instagram.com/blockverseinfotech/"><i class="ion-logo-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -661,6 +662,10 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <Script src="mail/contact.js"></Script>
+        <script src="path-to-your-jqBootstrapValidation-plugin.js"></script>
+        
+
 
         <!-- Main Javascript -->
         <script src="js/main.js"></script>
