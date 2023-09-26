@@ -3,14 +3,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $subject = $_POST['subject'];
+    $number = $_POST['number'];
     $message = $_POST['message'];
 
     // Validate the data (you can add more validation as needed)
-      // Create an email message
+    if (empty($name) || empty($email) || empty($number) || empty($message)) {
+        echo '<script>alert("Please fill out all fields.");</script>';
+    } else {
+        // Create an email message
         $to = 'sprikshit0610@gmail.com'; // Replace with your email address
         $subject = 'New contact form submission';
-        $message = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message";
+        $message = "Name: $name\nEmail: $email\nNumber: $number\nMessage:\n$message";
         $headers = 'From: ' . $email . "\r\n" .
             'Reply-To: ' . $email . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
@@ -25,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo '<script>alert("Sorry, there was an error sending your message. Please try again later.");</script>';
         }
     }
- else {
+} else {
     // Handle invalid form submission (GET request)
     echo '<script>alert("Invalid form submission.");</script>';
 }
