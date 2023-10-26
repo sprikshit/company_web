@@ -25,28 +25,8 @@
 
     <body>
         <!-- Nav Start -->
-        <div id="nav">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="images/Asset 4@2x.png" alt="Logo">
-                    </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <?php require './components/navbar.php'?>
 
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav ml-auto">
-                            <a href="index.html" class="nav-item nav-link active mr-5">Home</a>
-                            <a href="about.html" class="nav-item nav-link mr-5">About</a>
-                            <a href="service.html" class="nav-item nav-link mr-5">Service</a>
-                            
-                            <a href="contact.html" class="nav-item nav-link mr-5">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
         <!-- Nav End -->
 
         <!-- Single Page Start-->
@@ -84,59 +64,8 @@
         <!-- Single Page Start-->
 
         <!-- Footer Start -->
-        <div class="footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row  justify-content-between">
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">About Us</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Services</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & Conditions</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Services</h4>
-                            <ul>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Blockchain Development</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Web Development</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">App Development</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Graphic Designing</a></li>
-                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">IOT Services</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Blockverse Infotech Solutions</h4>
-                            <p>
-                                Centre Point Tower, Ajmer Rd, opp. Rj 14, Bhrigu Nagar, Vidhyut Nagar, Jaipur, Rajasthan 302021 <br>
-                                <strong>Phone:</strong> +91 7877056036<br>
-                                <strong>Email:</strong> info@blockverse.co.in<br>
-                            </p>
-        
-                            <div class="social-links">
-                                <a href="#https://www.facebook.com/p/Blockverse-Infotech-Solutions-100087563513249/"><i class="ion-logo-facebook"></i></a>
-                                <a href="https://www.linkedin.com/company/blockverse-infotech-solutions/mycompany/verifi"><i class="ion-logo-linkedin"></i></a>
-                                <a href="https://www.instagram.com/blockverseinfotech/"><i class="ion-logo-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 copyright">
-                        Copyright &copy; 2023 <a href="#">Blockverse Infotech Solutions</a>. All Rights Reserved
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+              <?php require './components/footer.php' ?>
+
         <!-- Footer End -->
 
         <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>

@@ -1070,7 +1070,7 @@ h6 {
 }
 
 .footer .footer-top {
-    background: url(/images/insurance-footer-background.png);
+    background: url('/images/insurance-footer-background.png');
     background-size: cover; /* This will make the background image cover the entire container */
     background-position: center; /* Center the background image */
     padding: 60px 0 30px 0;
@@ -1204,4 +1204,12 @@ h6 {
     .footer .copyright {
         text-align: left;
     }
+}
+
+.content{
+    margin-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
 }
